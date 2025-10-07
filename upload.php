@@ -35,7 +35,7 @@
     <p><strong>Please wait patiently.</strong></p>
     <?php
         if ($success && $checkWrite) {
-            echo("<a href=\"view.php?&file_path=$destFile\">Your file has successfully been uploaded, view it here.</a>");
+            echo("<a href=\"view.php?&file_path=$destFile\">Your file has been successfully uploaded, view it here.</a>");
         } else {
             if (!$success) {
                 echo("<p class=\"warning\"><em>There was issues moving your file.</em></p>");
