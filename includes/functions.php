@@ -6,7 +6,8 @@
 
     function read_csv_rows(string $path): array
     {
-        $data = array();
+        // echo($path);
+        $games = array();
 
         if (!is_file($path)) {
             echo ("error opening stream");
@@ -24,6 +25,8 @@
             }
 
             fclose($file);
+
+            // print_r($games);
 
             return $games;
         }
