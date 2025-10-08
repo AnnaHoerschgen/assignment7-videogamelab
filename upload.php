@@ -40,21 +40,12 @@
     <h1>Your File is Uploading...</h1>
     <p><strong>Please wait patiently.</strong></p>
     <?php
-<<<<<<< HEAD
-    if ($success && $checkWrite) {
-        echo ("<a href=\"$viewPath?&file_path=$destFile\">Your file has been successfully uploaded, view it here.</a>");
-    } else {
-        if (!$success) {
-            echo ("<p class=\"warning\"><em>There was issues moving your file.</em></p>");
-=======
         if ($success && $checkWrite) {
             echo("<a href=\"view.php?&file_path=$destFile\">Your file has been successfully uploaded, view it here.</a>");
->>>>>>> refs/remotes/origin/main
         } else {
             echo ("<p class=\"warning\"><em>There was issues writing your file.</em></p>");
         }
         echo ("<a href=\"index.php\">Something went wrong. Please try again.</a>");
-    }
     ?>
 </body>
 
